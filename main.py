@@ -38,12 +38,12 @@ def main():
                 print("You lose!") #
                 losses += 1
 
-            print(f"Wins:{wins}, Draws: {draws}, Losses: {losses}") #Print the current score out.
 
             #Play again code
             play_again = input("Play again? (y/n)").lower()
             if play_again == "n":
                 print("Thanks for playing!")
+                print(f"Wins:{wins}, Draws: {draws}, Losses: {losses}") #Print the final score out.
                 game_loop = False
 
 
